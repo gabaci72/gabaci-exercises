@@ -1,0 +1,102 @@
+/*
+  Challenge:
+  Turn the button into a "Login with GitHub" button.
+
+  This will require you to modify two lines of code in the CSS file 
+  and one line of code in the HTML file.
+
+  PS: The color code for the background of the GitHub button
+  is #24292d.
+*/
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Center the container horizontally */
+.container {
+    text-align: center;
+    margin-top: 20px; /* Add space above the button */
+  }
+  
+  /* Style the rounded button */
+  .rounded-button {
+    background-color: #24292d; /* Twitter blue color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 0px; /* Round the corners */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Font size of the text */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+  }
+  
+  /* Change the background color when hovering over the button */
+  .rounded-button:hover {
+    background-color: #555b61; /* Brighter color on hover */
+  }
+  
+  /* Change the background color when the button is clicked */
+  .rounded-button:active {
+    background-color: #1c1f21; /* Even brighter color on click */
+  }
