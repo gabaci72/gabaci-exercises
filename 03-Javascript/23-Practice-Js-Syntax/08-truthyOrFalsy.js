@@ -18,7 +18,14 @@ function truthyOrFalsy(value) {
     }
 }
 
+// Optimized version.
+function isFalsyOrEmpty(value) { }
+function truthyOrFalsy(value) {
+    return !!value; // Convert value to boolean using double negation.
+    // return value ? true : false; // Alternative using ternary operator.
+}
 
+// Uncomment these to check your work!
 
 
 
