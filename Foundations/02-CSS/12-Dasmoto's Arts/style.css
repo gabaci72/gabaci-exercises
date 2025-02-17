@@ -1,0 +1,84 @@
+h1 {
+    background-image: url('./pattern.jpeg'); /* Pattern resminizin yolu */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Metin rengi */
+    padding: 20px; /* İçerikle arka plan arasında boşluk */
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color:khaki;
+}
+
+#Brushes {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: mediumspringgreen;
+    width: 100%;
+}
+
+#hacksaw {
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;    
+}
+
+#phacksaw {
+    font-family: Helvetica;
+    color: black;
+    text-align: left;
+}
+
+.price {
+    font-family: Helvetica;
+    color: blue;
+    font-weight: bold;
+}
+
+#Frames {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: lightcoral;
+    width: 100%;
+}
+
+h3 {
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    text-align: left;
+    font-family: Helvetica;
+    color: black;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: skyblue;
+    width: 100%;
+}
+h3 {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+#finnishpaint {
+    text-align: left;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+}

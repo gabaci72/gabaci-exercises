@@ -1,0 +1,42 @@
+.breadcrumb > li {
+    display: inline;
+  }
+  
+  .breadcrumb li+li::before {
+    content: "/ ";
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #000; /* Default color */
+  }
+  
+  .breadcrumb a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  
+  .breadcrumb li.location+li.location::before {
+    content: "/ ";
+  }
+  .breadcrumb li.attribute a {
+    color: gray;
+  }
+  
+  .breadcrumb li.attribute::after {
+    content: "x";
+    color: red;
+    font-size: 10px;
+    vertical-align: super;
+  }
+  .breadcrumb a {
+    font-size: 14px;
+    background-color: lightgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .breadcrumb a:hover {
+    background-color: darkgray;
+  }
+  
+  

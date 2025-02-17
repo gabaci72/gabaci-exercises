@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      gap: 5px;
+      grid: repeat(2, 100px) / repeat(2, 150px);
+      grid-auto-rows: 45px;
+      grid-auto-columns: 65px;
+      grid-auto-flow: column;
+    }
+
+    .box {
+      border: 2px solid black; /* Adjust border style, width, and color as needed */
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='box'>Part 1</div>
+  <div class='box'>Part 2</div>
+  <div class='box'>Part 3</div>
+  <div class='box'>Part 4</div>
+  <div class='box'>Part 5</div>
+</body>
+</html>

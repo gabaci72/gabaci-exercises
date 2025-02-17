@@ -1,0 +1,141 @@
+
+        .navbar  {
+            font-family: font-family: "Galada", ;
+            font-weight: 700;
+            font-style: normal;
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+
+        .navbar a {
+       
+            float: left;color: #000;
+            color: black
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; 
+          }
+
+                   
+        
+          
+
+body {
+  font-family: "Handlee", cursive;
+  font-weight: 700;
+  font-style: normal;
+  }
+  
+  .container {
+    border: 2px solid #a2a2a6;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  
+  .color-container {
+    width: 100%;
+  }
+  
+  .color-panel {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 100px;
+  }
+  
+  .DeepSkyBlue {
+    background-color:#00BFFF;
+    color: whitesmoke;
+    font-style: bolder;
+  }
+  
+  .MediumVioletRed {
+    background-color: #C71585;
+    color: #fff;
+  }
+  
+  .OliveDrab {
+    background-color: #6B8E23;
+    color: #fff;
+  }
+  
+  .Bisque {
+    background-color: #FFE4C4;
+  }
+
+  .Chocolate {
+    background-color: #D2691E;
+    color: #fff;
+  }
+
+  .NavajoWhite {
+    background-color: #FFDEAD;
+  }
+  
+  .font-panel {
+    width: 45%;
+    display: inline-block;
+  }
+  
+  .font-label {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .regular {
+    font-style: normal;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .source-code-pro {
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-panel h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .text-panel h2 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-panel p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer {
+        font-style: bold;
+        text-align: center;
+            
+  }
+
+  em {
+    font-style: oblique;
+    font-weight: 900;
+  }

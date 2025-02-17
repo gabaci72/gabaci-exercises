@@ -1,0 +1,44 @@
+.itim-regular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfabab;
+    font-family: "Itim", cursive; /* Apply Itim font to the container */
+  }
+  
+  .heading {
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .headItem1, .headItem2, .headItem3 {
+    background-color: rgb(122, 225, 133);
+    margin: 10px;
+    padding: 20px;
+    width: 100px; /* Adjust width as needed */
+    text-align: center;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+  }
+  
+  .headItem1:hover, .headItem2:hover, .headItem3:hover {
+    background-color: #99e2a9; /* Change background color on hover */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+  
+  .container .item {
+    background-color: dodgerblue;
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    font-size: 1.2em;
+  }
