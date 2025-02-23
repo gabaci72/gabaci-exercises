@@ -1,0 +1,34 @@
+@startuml
+
+class School {
+  -_name: String
+  -_level: String
+  -_numberOfStudents: Number
+
+  +constructor(name: String, level: String, numberOfStudents: Number): void
+  +getName(): String
+  +getLevel(): String
+  +getNumberOfStudents(): Number
+  +setNumberOfStudents(newNumberOfStudents: Number): void
+  +quickFacts(): void
+  +static pickSubstituteTeacher(substituteTeachers: String[]): String
+}
+
+class PrimarySchool {
+  -_pickupPolicy: String
+
+  +constructor(name: String, numberOfStudents: Number, pickupPolicy: String): void
+  +getPickupPolicy(): String
+}
+
+class HighSchool {
+  -_sportsTeams: String[]
+
+  +constructor(name: String, numberOfStudents: Number, sportsTeams: String[]): void
+  +getSportsTeams(): void
+}
+
+PrimarySchool <|-- School
+HighSchool <|-- School
+
+@enduml
