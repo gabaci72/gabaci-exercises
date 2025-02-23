@@ -1,0 +1,31 @@
+classDiagram
+
+class Media {
+  -_title: string
+  -_isCheckedOut: boolean
+  -_ratings: number[]
+  +get title(): string
+  +get isCheckedOut(): boolean
+  +get ratings(): number[]
+  +set isCheckedOut(newIsCheckedOut: boolean): void
+  +toggleCheckOutStatus(): void
+  +getAverageRating(): number
+  +addRating(rating: number): void
+}
+
+class Book {
+  -_author: string
+  -_pages: number
+  +get author(): string
+  +get pages(): number
+}
+
+class Movie {
+  -_director: string
+  -_runTime: number
+  +get director(): string
+  +get runTime(): number
+}
+
+Book <|-- Media
+Movie <|-- Media

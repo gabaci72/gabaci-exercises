@@ -1,0 +1,36 @@
+@startuml
+
+class Media {
+  -title: String
+  -isCheckedOut: Boolean
+  -ratings: Integer[]
+
+  +getTitle(): String
+  +getIsCheckedOut(): Boolean
+  +getRatings(): Integer[]
+  +setIsCheckedOut(newIsCheckedOut: Boolean): void
+  +toggleCheckOutStatus(): void
+  +getAverageRating(): Float
+  +addRating(rating: Integer): void
+}
+
+class Book {
+  -author: String
+  -pages: Integer
+
+  +getAuthor(): String
+  +getPages(): Integer
+}
+
+class Movie {
+  -director: String
+  -runTime: Integer
+
+  +getDirector(): String
+  +getRunTime(): Integer
+}
+
+Book <|-- Media
+Movie <|-- Media
+
+@enduml
