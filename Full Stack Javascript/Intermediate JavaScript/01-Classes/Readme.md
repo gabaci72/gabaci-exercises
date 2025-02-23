@@ -1,65 +1,106 @@
 
-```markdown
-# JavaScript Intermediate: Classes
+---
 
-This directory contains a series of JavaScript files that cover intermediate-level concepts related to classes in JavaScript. Each file focuses on a specific aspect of classes, helping you understand how to use them effectively.
+# JavaScript Intermediate Classes
+
+This directory contains examples and exercises for understanding intermediate concepts related to classes in JavaScript.
 
 ## Table of Contents
 
-1. [01-IntroToClasses.js](#01-introtoclassesjs)
-2. [02-Constructor.js](#02-constructorjs)
-3. [03-Instance.js](#03-instancejs)
-4. [04-Methods.js](#04-methodsjs)
-5. [05-MethodsCall.js](#05-methodscalljs)
+1. [00-Parent-Child.js](#00-parent-childjs)
+2. [01-IntroToClasses.js](#01-introtoclassesjs)
+3. [02-Constructor.js](#02-constructorjs)
+4. [03-Instance.js](#03-instancejs)
+5. [04-Methods.js](#04-methodsjs)
+6. [05-MethodsCall.js](#05-methodscalljs)
+7. [06-Inheritance1.js](#06-inheritance1js)
+8. [07-Inheritance2.js](#07-inheritance2js)
+9. [08-Inheritance3.js](#08-inheritance3js)
+10. [09-Inheritance4.js](#09-inheritance4js)
+11. [10-Inheritance5.js](#10-inheritance5js)
+12. [11-Static-Methods.js](#11-static-methodsjs)
+13. [12-Class-Review.js](#12-class-reviewjs)
 
-## 01-IntroToClasses.js
+---
 
-This file introduces the basic concept of classes in JavaScript. It explains what classes are, why they are useful, and how to define a simple class. The example demonstrates the creation of a `Dog` class with properties and methods.
+## File Summaries
 
-- **Key Concepts**: Class definition, class syntax, basic class structure.
+### 00-Parent-Child.js
 
-## 02-Constructor.js
+- Demonstrates inheritance by creating a `Parent` class and a `Child` class that extends it.
+- Shows how to define properties and methods in the parent class and access them in the child class.
+- Example: Creating a `Child` instance and calling a method that logs a greeting.
 
-In this file, you will learn about constructors in classes. Constructors are special methods that are called when an instance of a class is created. This file explains how to define and use constructors. The example shows how to create a `Surgeon` class with a constructor that initializes properties.
+### 01-IntroToClasses.js
 
-- **Key Concepts**: Constructor method, `this` keyword, initializing properties.
+- Introduction to classes in JavaScript.
+- Basic class definition, syntax, and structure.
+- Example: Creating a `Dog` class with properties and methods.
 
-## 03-Instance.js
+### 02-Constructor.js
 
-This file covers the creation of instances from classes. It explains how to instantiate objects from a class and how to access properties and methods of those instances. The example demonstrates creating instances of the `Surgeon` class and accessing their properties.
+- Understanding constructors in classes.
+- Defining and using constructors.
+- Example: Creating a `Surgeon` class with a constructor that initializes properties.
 
-- **Key Concepts**: Class instantiation, `new` keyword, accessing instance properties and methods.
+### 03-Instance.js
 
-## 04-Methods.js
+- Creating instances from classes.
+- Instantiating objects and accessing properties/methods.
+- Example: Creating instances of the `Surgeon` class and accessing their properties.
 
-This file delves into methods within classes. It explains different types of methods (instance methods, static methods) and how to define and use them. The example shows how to add getter methods and instance methods to the `Surgeon` class.
+### 04-Methods.js
 
-- **Key Concepts**: Instance methods, static methods, method definitions.
+- Methods within classes.
+- Instance methods, static methods, and method definitions.
+- Example: Adding getter methods and instance methods to the `Surgeon` class.
 
-## 05-MethodsCall.js
+### 05-MethodsCall.js
 
-In this file, you will see examples of calling methods on class instances. It demonstrates how to invoke instance methods and static methods, and how to pass arguments to methods. The example shows how to call methods on instances of the `Surgeon` class and observe the changes.
+- Calling methods on class instances.
+- Invoking instance methods, static methods, and passing arguments.
+- Example: Calling methods on instances of the `Surgeon` class.
 
-- **Key Concepts**: Method invocation, passing arguments, static method calls.
+### 06-Inheritance1.js
 
-## How to Use
+- Inheritance in classes.
+- Creating parent and child classes, inheriting properties/methods.
+- Example: Creating an `Animal` class and a `Cat` class that inherits from `Animal`.
 
-1. Clone the repository to your local machine.
-2. Navigate to the `Js/intermediate/Classes` directory.
-3. Open each file in your preferred code editor.
-4. Follow the comments and examples within each file to understand the concepts.
+### 07-Inheritance2.js
 
-## Prerequisites
+- Building upon inheritance concepts.
+- Using the `super` keyword, method overriding, accessing parent class methods/properties.
+- Example: Demonstrating method overriding and using the `super` keyword.
 
-- Basic understanding of JavaScript.
-- Familiarity with ES6+ features.
+### 08-Inheritance3.js
 
-## Contributing
+- Extending the `HospitalEmployee` class to include specialization and take vacation days.
+- Creating a `Nurse` class that inherits from `HospitalEmployee`.
+- Example: Creating a `Nurse` instance and demonstrating its properties and methods.
 
-If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+### 09-Inheritance4.js
 
-## License
+- Review of inheritance concepts.
+- Creating a `Doctor` class that inherits from `HospitalEmployee`.
+- Example: Creating a `Doctor` instance and demonstrating its properties and methods.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+### 10-Inheritance5.js
 
+- Further review of inheritance concepts.
+- Creating a `Person` class with a `sayHello` method and a `Teacher` class that extends it.
+- Example: Creating a `Teacher` instance and demonstrating method overriding.
+
+### 11-Static-Methods.js
+
+- Static methods in classes.
+- Defining and using static methods, accessing them without creating an instance.
+- Example: Creating a `MathUtils` class with static methods for manipulating numbers.
+
+### 12-Class-Review.js
+
+- Review of class-related concepts, including inheritance, methods, and static methods.
+- Creating a `Doctor` class that inherits from `HospitalEmployee`.
+- Example: Creating a `Doctor` instance and demonstrating its properties and methods.
+
+---
