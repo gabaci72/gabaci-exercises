@@ -1,0 +1,23 @@
+@startuml
+class CelsiusToFahrenheit {
+  + celsiusToFahrenheit(celsius: number): number
+}
+
+class Converters {
+  + celsiusToFahrenheit(celsius: number): number
+  + fahrenheitToCelsius(fahrenheit: number): number
+}
+
+class CelsiusToFahrenheitJS {
+  + main(celsius: number)
+}
+
+class WaterLimitsJS {
+  + main()
+}
+
+CelsiusToFahrenheit --|> Converters
+Converters --|> CelsiusToFahrenheitJS
+Converters --|> WaterLimitsJS
+
+@enduml
