@@ -1,0 +1,29 @@
+@startuml
+participant User as "User"
+participant App as "app.js"
+participant Game as "game.js"
+
+User->>App: Number Guess
+App->>Game: Send Guessed Number
+Game->>App: Is Number Correct?
+App->>User: Result
+
+alt Game Exit
+User->>App: Quit
+App->>Game: Game Exit Process
+Game->>App: Game Exit Confirmation
+App->>User: Game Exit Message
+end
+
+alt Number Guess
+User->>App: Number Guess
+App->>Game: Send Guessed Number
+Game->>App: Is Number Correct?
+alt Number Correct
+App->>User: Congratulations!
+else Number Wrong
+App->>User: Try Again
+end
+end
+
+@enduml
