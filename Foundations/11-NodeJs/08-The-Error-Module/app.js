@@ -9,3 +9,4 @@ let errorFirstCallback = (err, data) => {
   }
 };
 
+api.errorProneAsyncApi('problematic input', errorFirstCallback);
