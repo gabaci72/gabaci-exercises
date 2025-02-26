@@ -1,0 +1,26 @@
+@startuml
+
+class MessageMixer {
+    - userInput: string
+    - displayOutput(string)
+    + getEncryptionMethod()
+    + handleInput(string)
+}
+
+class Encryptors {
+    + caesarCipher(string, int): string
+    + symbolCipher(string): string
+    + reverseCipher(string): string
+}
+
+class SuperEncoder {
+    - encryptionFunctions: Encryptors
+    - encodeMessage(string): string
+    - decodeMessage(string): string
+    + handleInput(string)
+}
+
+MessageMixer "1" -- "1..*" Encryptors : kullanır
+SuperEncoder "1" -- "1" Encryptors : kullanır
+
+@enduml
