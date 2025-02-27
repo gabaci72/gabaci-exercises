@@ -1,0 +1,45 @@
+@startuml
+' Define the Request rectangle
+rectangle "Request" as Request {
+  rectangle "Method: POST" as Method
+  rectangle "Path: /lessons/node" as Path
+  rectangle "HTTP Protocol Version: HTTP/3" as RequestVersion
+  rectangle "Headers: Content-Type..." as RequestHeaders
+  rectangle "Body: Data" as RequestBody
+
+  ' Group related elements together
+  Method -down-> Path
+  Path -down-> RequestVersion
+  RequestVersion -down-> RequestHeaders
+  RequestHeaders -down-> RequestBody
+}
+
+' Define the Response rectangle
+rectangle "Response" as Response {
+  rectangle "HTTP Protocol Version: HTTP/3" as ResponseVersion
+  rectangle "Status Code: 200" as StatusCode
+  rectangle "Status Message: OK" as StatusMessage
+  rectangle "Headers: Content-Type..." as ResponseHeaders
+  rectangle "Body: Data" as ResponseBody
+
+  ' Group related elements together
+  ResponseVersion -down-> StatusCode
+  StatusCode -down-> StatusMessage
+  StatusMessage -down-> ResponseHeaders
+  ResponseHeaders -down-> ResponseBody
+}
+
+' Add notes for better understanding
+note bottom of Request
+  This represents the structure
+  of an HTTP request.
+end note
+
+note bottom of Response
+  This represents the structure
+  of an HTTP response.
+end note
+
+' Show the relationship between Request and Response
+Request --> Response
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+' Define the participants
+participant Client
+participant Server
+participant "Node.js" as Node
+participant FileSystem
+
+' Define the interactions
+Client -> Server: HTTP Request
+Server -> Node: Handle Request
+Node -> FileSystem: Read File (if needed)
+FileSystem --> Node: File Content (if needed)
+Node -> Server: HTTP Response
+Server --> Client: HTTP Response
+
+' Add notes for better understanding
+note right of Client
+  The client sends an HTTP request
+  to the server.
+end note
+
+note right of Server
+  The server handles the request
+  and may interact with Node.js
+  and the file system.
+end note
+
+note right of Node
+  Node.js processes the request
+  and may read files from the
+  file system if needed.
+end note
+
+note right of FileSystem
+  The file system provides the
+  file content to Node.js if required.
+end note
+@enduml

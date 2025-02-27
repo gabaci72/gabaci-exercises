@@ -1,0 +1,27 @@
+@startuml
+skinparam backgroundColor white
+
+'PC ve Server ikonları kullanımı
+participant "Client" as C <<Monitor>>
+participant "Server" as S <<Server>>
+
+box "TCP Connection" #LightBlue
+participant C
+participant S
+
+C -> S : Request connection
+S --> C : Confirm connection
+C -> S : Request data
+S --> C : Send data
+end box
+
+box "UDP Connection" #LightGreen
+participant C
+participant S
+
+C -> S : Request data
+S --> C : Send data
+C -> S : Request data
+S --> C : Send data
+end box
+@enduml

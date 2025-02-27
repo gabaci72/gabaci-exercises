@@ -1,0 +1,14 @@
+{
+  "name": "16-http-server-with-node",
+  "version": "1.0.0",
+  "description": "Creating an HTTP server with Node.js is a straightforward process. Below is a simple example to get you started. This example will create a basic HTTP server that listens on a specified port and responds with a \"Hello, World!\" message.\r ### Step-by-Step Guide",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

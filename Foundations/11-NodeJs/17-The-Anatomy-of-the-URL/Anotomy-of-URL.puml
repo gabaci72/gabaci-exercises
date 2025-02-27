@@ -1,0 +1,26 @@
+@startuml
+title URL Structure
+
+left to right direction 
+
+entity "Protocol" as protocol {
+  +https
+}
+
+entity "Domain" as domain {
+  +codecademy.com
+}
+
+entity "Path" as path {
+  +articles
+}
+
+entity "Query" as query {
+  +search=node
+}
+
+protocol -[#black]-> domain
+domain -[#black]-> path
+path -[#black]-> query
+
+@enduml
