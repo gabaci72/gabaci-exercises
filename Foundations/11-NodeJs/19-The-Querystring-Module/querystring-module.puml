@@ -1,0 +1,24 @@
+@startuml
+title Node.js QueryString Module Usage
+
+participant Client
+participant "Node.js Server" as Server
+participant "querystring Module" as QS
+
+Client -> Server: HTTP Request with Query String\n(e.g. "name=john&age=25")
+activate Server
+
+Server -> QS: Parse query string
+activate QS
+QS --> Server: Return parsed object\n{name: "john", age: "25"}
+deactivate QS
+
+Server -> QS: Stringify object
+activate QS
+QS --> Server: Return query string
+deactivate QS
+
+Server --> Client: HTTP Response
+deactivate Server
+
+@enduml

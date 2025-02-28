@@ -21,9 +21,24 @@ querystring.stringify(props); // Returns 'prop1=value1&prop2=value2'
 
 ## .escape(): 
 This method is used for performing percent-encoding on a given query string.
-
+```js
+const str = 'prop1=value1&prop2=value2';
+querystring.escape(str); // Returns 'prop1=value1&prop2=value2'
+```
 ## .unescape(): 
 This method is used to decode percent-encoded characters within a given query string.
+```js
+const str = 'prop1=value1&prop2=value2';
+querystring.unescape(str); // Returns 'prop1=value1&prop2=value2'
+```
+# .split():
+In JavaScript, we can split a string using the .split() method. You can isolate the query string by splitting the URL at the ? character.
+```js
+const queryToParse = stringToParse.split('?')[1];
+```
+
+## Important Notes:
+The querystring module is not meant to be used for parsing or formatting entire URLs. It is meant to be used for parsing and formatting only the query string portion of a URL. This means that the querystring module is not meant to be used for parsing or formatting URLs that do not have a query string.
 
 The querystring module is focused solely on manipulating URL query strings, so it requires the query string to have already been isolated from an incoming URL as part of a request. This means that some pre-processing of the URL is necessary before being able to use the module.
 
