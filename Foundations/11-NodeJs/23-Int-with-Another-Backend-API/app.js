@@ -1,24 +1,36 @@
-const http = require("http");
-const https = require("https");
+const http = require('http');
+const https = require('https');
 
 const handleGetRequest = (req, res) => {
-    // Configuration for the external GET request
+    // Write external API request code here
     const options = {
-        hostname: "static-assets.codecademy.com",
-        path: "/Courses/Learn-Node/http/data.json",
-        method: "GET",
-    };
+        hostname: 'static-assets.codecademy.com',
+        path: '/Courses/Learn-Node/http/data.json',
+        method: 'GET'
+    }
 
-    // You can now use these options to make a request
-    // For example, using https.get(options, callback)
-};
+    const request = https.request(options, response => {
+        let data = '';
+
+        response.on('data', chunk => {
+            data += chunk;
+        });
+
+        response.on('end', () => {
+            console.log(data);
+            res.end(data);
+        });
+    });
+
+    request.end();
+}
 
 // Creates server instance
 const server = http.createServer((req, res) => {
     const { method } = req;
 
     switch (method) {
-        case "GET":
+        case 'GET':
             return handleGetRequest(req, res);
         default:
             throw new Error(`Unsupported request method: ${method}`);
