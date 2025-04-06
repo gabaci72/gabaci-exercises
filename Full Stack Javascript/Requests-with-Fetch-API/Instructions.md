@@ -53,3 +53,13 @@ We will use an anonymous arrow function as the callback. The syntax will look li
 ```js
 fetch(endpoint, {cache: 'no-cache'}).then(response => {});
 ```
+
+- [x]  - Task 5:
+Inside the success callback function, create a conditional statement that checks if the ok property of the response object evaluates to a truthy value.
+
+If so, return response.json().
+
+By returning response.json(), the next .then() method chained to it will receive a Promise with JSON data.
+
+* Hint: 
+Use an if conditional statement to check response.ok. Then inside the if conditional statement, return response.json().
