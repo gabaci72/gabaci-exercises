@@ -1,4 +1,7 @@
-# Instructions
+# Making a Get Requests Using Fetch API
+
+## Instructions
+
 
 - [x]  - Task 1: At the top of main.js, create a const variable called url. Assign url to the following URL as a string:
 

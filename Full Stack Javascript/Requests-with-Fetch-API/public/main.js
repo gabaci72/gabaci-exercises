@@ -9,20 +9,21 @@ const responseField = document.querySelector("#responseField");
 // Asynchronous function
 const getSuggestions = () => {
   const wordQuery = inputField.value;
-  const endpoint = `${url}${wordQuery}`;
-
-  fetch(endpoint, { cache: "no-cache" }).then(
-    (response) => {
+  const endpoint = url + wordQuery;
+  fetch(endpoint, {cache: 'no-cache'})
+    .then(response => {
       if (response.ok) {
         return response.json();
       }
-      throw new Error("Request failed!");
-    },
-    (networkError) => {
+      throw new Error('Request failed!');
+    }, networkError => {
       console.log(networkError.message);
-    }
-  );
+    })
+    .then(jsonResponse => {
+      // Code to handle jsonResponse will go here
+    });
 };
+
 
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {
