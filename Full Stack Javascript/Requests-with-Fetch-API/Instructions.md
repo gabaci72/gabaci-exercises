@@ -70,3 +70,23 @@ Below the condition’s code block, throw an Error stating 'Request failed!' to 
 * Hint :
 This line of code is not part of the conditional statement to check response.ok. It should go under that block of code but still inside the callback function.
 
+
+- [x]  - Task 7:
+
+Next, we will add a second argument to the .then() method to add another callback function to handle errors. Create an arrow function that takes one parameter, networkError.
+
+In the code block of the arrow function, log networkError.message to the console.
+
+Note that we will continue to add to this code in the next exercise to manipulate the webpage to see the word suggestions from Datamuse. The submit button will not return anything yet.
+
+- Hint:
+- 
+- The .then() method should now look something like:
+
+```js
+.then((response) => {
+  // Previous code to check and return response
+},(networkError) => {
+  // log networkError.message
+});
+```
