@@ -41,4 +41,15 @@ console.log(`${word1} ${word2}`); // output: 'hello world!'
 - [x]  - Task 3:Inside the getSuggestions() function, call the fetch() function and pass in endpoint as an argument. For this API to work within the Codecademy browser, add {cache: 'no-cache'} as the second argument.
 
 * Hint:
-* Make sure to write inside the code block of getSuggestions().
+
+- Make sure to write inside the code block of getSuggestions().
+- [x]  - Task 4:
+Chain a .then() method to the fetch() function. Pass an arrow callback function as its argument. The callback function should take response as its single parameter.
+
+* Hint:
+
+We will use an anonymous arrow function as the callback. The syntax will look like:
+
+```js
+fetch(endpoint, {cache: 'no-cache'}).then(response => {});
+```
