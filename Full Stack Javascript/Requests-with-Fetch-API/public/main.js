@@ -14,6 +14,7 @@ const getSuggestions = () => {
     if (response.ok) {
       return response.json();
     }
+    throw new Error("Request failed!");
   });
 };
 

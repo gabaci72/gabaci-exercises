@@ -63,3 +63,10 @@ By returning response.json(), the next .then() method chained to it will receive
 
 * Hint: 
 Use an if conditional statement to check response.ok. Then inside the if conditional statement, return response.json().
+
+- [x]  - Task 6:
+Below the condition’s code block, throw an Error stating 'Request failed!' to raise an exception if the request failed.
+
+* Hint :
+This line of code is not part of the conditional statement to check response.ok. It should go under that block of code but still inside the callback function.
+
