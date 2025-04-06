@@ -10,6 +10,7 @@ const responseField = document.querySelector("#responseField");
 const getSuggestions = () => {
   const wordQuery = inputField.value;
   const endpoint = url + wordQuery;
+  fetch(endpoint, { cache: "no-cache" });
 };
 
 // Clears previous results and display results to webpage

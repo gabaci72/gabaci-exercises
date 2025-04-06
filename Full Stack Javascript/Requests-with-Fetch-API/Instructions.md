@@ -11,7 +11,7 @@ The ?sl= portion of the string will be the start of your query string, which wil
 * Hint:
 Wrap the URL in quotes—this will be the URL of the API that we will be accessing.
 
-- [ ]  - Task 2: Inside the getSuggestions() function, create a const variable called wordQuery and assign it inputField.value.
+- [x]  - Task 2: Inside the getSuggestions() function, create a const variable called wordQuery and assign it inputField.value.
 
 We’ll need wordQuery to store the value of what is being typed into the input field.
 
@@ -37,3 +37,8 @@ We can also interpolate it using a template literal, but remember to use backtic
 ```js
 console.log(`${word1} ${word2}`); // output: 'hello world!'
 ```
+
+- [x]  - Task 3:Inside the getSuggestions() function, call the fetch() function and pass in endpoint as an argument. For this API to work within the Codecademy browser, add {cache: 'no-cache'} as the second argument.
+
+* Hint:
+* Make sure to write inside the code block of getSuggestions().
