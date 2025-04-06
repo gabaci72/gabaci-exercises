@@ -10,20 +10,22 @@ const responseField = document.querySelector("#responseField");
 const getSuggestions = () => {
   const wordQuery = inputField.value;
   const endpoint = url + wordQuery;
-  fetch(endpoint, {cache: 'no-cache'})
-    .then(response => {
-      if (response.ok) {
-        return response.json();
+  fetch(endpoint, { cache: "no-cache" })
+    .then(
+      (response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error("Request failed!");
+      },
+      (networkError) => {
+        console.log(networkError.message);
       }
-      throw new Error('Request failed!');
-    }, networkError => {
-      console.log(networkError.message);
-    })
-    .then(jsonResponse => {
-      // Code to handle jsonResponse will go here
+    )
+    .then((jsonResponse) => {
+      renderRawResponse(jsonResponse);
     });
 };
-
 
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {

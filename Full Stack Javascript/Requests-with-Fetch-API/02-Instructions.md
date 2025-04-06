@@ -12,9 +12,15 @@ As the first argument of our second .then() method, pass an anonymous arrow call
 - Hint :Make sure to chain our new .then() method to the .then() method from the previous exercise. There should now be two .then() methods used for our fetch() call.
 
 
-- [x]  - Task 2 :
+- [x]  - Task 2 :Inside the callback function we just created, call the renderRawResponse() function and pass in jsonResponse as its argument. Run the code.
 
-- Hint :
+In the input field, type in a word and click the submit button.
+
+If all went well, we should see an array of words that the Datamuse API responded with!
+
+Note that you can find the renderRawResponse() function declaration in public/helperFunctions.js.
+
+- Hint :Make sure that the renderRawResponse() function is called inside the second .then()‘s callback function.
 
 - [x]  - Task 3 :
 
