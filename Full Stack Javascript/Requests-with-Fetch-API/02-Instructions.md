@@ -22,6 +22,13 @@ Note that you can find the renderRawResponse() function declaration in public/he
 
 - Hint :Make sure that the renderRawResponse() function is called inside the second .then()‘s callback function.
 
-- [x]  - Task 3 :
+- [x]  - Task 3 :.
+Let’s format our response from the Datamuse API to look presentable on the webpage. To do this, we will use the renderResponse() function that’s been defined in public/helperFunctions.js.
 
-- Hint :
+Comment out renderRawResponse(jsonResponse). Then below, call renderResponse(jsonResponse).
+
+Run your code.
+
+Try the webpage again with another word!
+
+- Hint :Remember to call renderResponse(jsonResponse) and comment out renderRawReponse(jsonResponse). This code should be inside the callback function of the second .then() method.

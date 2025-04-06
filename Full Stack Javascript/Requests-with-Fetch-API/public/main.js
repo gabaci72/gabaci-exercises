@@ -23,7 +23,8 @@ const getSuggestions = () => {
       }
     )
     .then((jsonResponse) => {
-      renderRawResponse(jsonResponse);
+      //renderRawResponse(jsonResponse);
+      renderResponse(jsonResponse);
     });
 };
 
