@@ -1,0 +1,24 @@
+@startuml
+participant User
+participant Button as "Generate Button"
+participant JSRuntime as "JavaScript Runtime"
+participant EventLoop as "Event Loop"
+participant Fetch as "fetch()"
+participant Server as "Server"
+participant CallbackQueue as "Callback Queue"
+participant TaskQueue as "Task Queue"
+participant UI as "UI Thread"
+
+User -> Button: Clicks "Generate!" button
+Button -> JSRuntime: Trigger event
+JSRuntime -> Fetch: Calls `fetch()`
+Fetch -> EventLoop: Initiates HTTP request
+EventLoop -> TaskQueue: Adds task to task queue
+TaskQueue -> Fetch: HTTP request sent to Server
+Server -> TaskQueue: Returns JSON data
+TaskQueue -> EventLoop: Adds callback to callback queue
+EventLoop -> JSRuntime: Callback is ready to run
+JSRuntime -> JSRuntime: Processes data using `.then` or `async/await`
+JSRuntime -> UI: Updates UI with data
+UI --> User: User sees the JSON data
+@enduml

@@ -1,0 +1,18 @@
+@startuml SequenceDiagram
+participant User as "User"
+participant Browser as "Browser"
+participant JSRuntime as "JavaScript Runtime"
+participant Fetch as "fetch()"
+participant Server as "Server"
+participant Display as "Display"
+
+User -> Browser: Clicks "Generate!" button
+Browser -> JSRuntime: Button click event triggers
+JSRuntime -> Fetch: Calls `fetch()` API
+Fetch -> Server: Sends HTTP request
+Server --> Fetch: Returns JSON data
+Fetch --> JSRuntime: Returns promise with response
+JSRuntime -> JSRuntime: Processes response using `Promise.then` or `async/await`
+JSRuntime -> Display: Displays JSON data in the "displayContainer"
+Display --> User: User sees the JSON data
+@enduml
