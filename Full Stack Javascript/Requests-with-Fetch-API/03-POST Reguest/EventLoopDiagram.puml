@@ -1,0 +1,17 @@
+@startuml
+actor User
+participant "Browser" as B
+participant "Event Loop" as EL
+participant "Main Thread" as MT
+participant "API Server" as AS
+
+User -> B: Clicks "shortenButton"
+B -> EL: Adds click event to queue
+EL -> MT: Executes displayShortUrl
+MT -> B: Prevents default event
+MT -> B: Clears responseField
+MT -> MT: Calls shortenUrl
+MT -> AS: Sends POST request to API Server
+AS --> MT: Returns shortened URL
+MT -> B: Updates responseField with shortened URL
+@enduml
