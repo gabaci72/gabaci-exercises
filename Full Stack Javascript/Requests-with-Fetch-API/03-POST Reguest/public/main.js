@@ -15,7 +15,8 @@ const shortenUrl = () => {
     method: 'POST',
     headers: {
       'Content-type': 'application/json', 'apikey': apiKey
-    }
+    },
+    body: data
   });
 
 };
