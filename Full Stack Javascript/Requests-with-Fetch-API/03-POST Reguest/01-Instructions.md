@@ -44,10 +44,40 @@ An object with a single property (key-value pair) should look like this:
 
 ```
 
-- [ ]  - Task 6:
+- [x]  - Task 6: .
+In the same object, add another property. The key for this property is headers and the value will be the following object:
 
-- Hint:
+```js
+{
+  'Content-type': 'application/json',
+  'apikey': apiKey
+}
 
-- [ ]  - Task 7:
+```
 
-- Hint:
+We will use this to connect to the API.
+
+- Hint: Remember to separate the properties using a comma.
+
+Take a look at the following example:
+
+```js
+let someObject = {
+  key1: value1,
+  key2: {
+    insideKey2: valueInsideKey2,
+    alsoInsideKey2: value2InsideKey2
+  }
+}
+
+```
+
+- [x]  - Task 7: .
+In that same object that has the properties method and headers, add another property. The key is named body and the value will be data.
+
+We’ve now created an object containing all the information we need for our POST request!
+
+
+- Hint: Make sure you’re adding our last property to the object that has method and headers, not not in the headers object.
+
+Also, check to see that you’ve separated the properties with commas.
