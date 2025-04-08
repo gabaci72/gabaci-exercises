@@ -11,7 +11,9 @@ const responseField = document.querySelector('#responseField');
 const shortenUrl = () => {
   const urlToShorten = inputField.value;
   const data = JSON.stringify({destination: urlToShorten});
-  fetch(url, {});
+  fetch(url, {
+    method: 'POST'
+  });
 
 };
 

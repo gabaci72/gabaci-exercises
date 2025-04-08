@@ -33,9 +33,16 @@ JSON.stringify({destination: urlToShorten});
 fetch(url, {})
 ```
 
-- [ ]  - Task 5:
+- [x]  - Task 5: Now it’s time to add some properties to the empty object that you just created. Add a property with the key method and the value 'POST'.
 
-- Hint:
+- Hint: Make sure you’re adding the property in the empty object you created in the previous step.
+
+An object with a single property (key-value pair) should look like this:
+
+```js
+{ exampleKey: 'example value' }
+
+```
 
 - [ ]  - Task 6:
 
